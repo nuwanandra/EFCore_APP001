@@ -8,4 +8,4 @@ Protected, override <br>
 Model Builder <br>
 PM> Add-Migration AddCompanyAndEmployee <br>
 Transaction <br>
-Dapper <br>
+Dapper, EF core performance <br>

@@ -1,4 +1,15 @@
+using EFCore_APP001;
+using Microsoft.EntityFrameworkCore;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddDbContext<DatabaseContext>(
+    o => o.UseSqlServer(builder.Configuration.GetConnectionString("defaultSQL001"))) ;
+
+
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
